@@ -23,7 +23,7 @@ export const MusicPlayer: React.FC<IMusicPlayerProps> = (props) => {
 
   useEffect(() => {
     localStorage.setItem('playingState', JSON.stringify(playingState));
-  }, [playingState.currentQueueSong]);
+  }, [playingState]);
 
   useEvent('pausevideo', () => {
     setIsPlaying(false);
